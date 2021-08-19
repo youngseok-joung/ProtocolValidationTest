@@ -4,17 +4,15 @@ from pymodbus.datastore import ModbusSequentialDataBlock, ModbusSlaveContext, Mo
 from pymodbus.transaction import ModbusRtuFramer, ModbusAsciiFramer
 from twisted.internet.task import LoopingCall
 from threading import Thread
-import pid
 import threading
 from time import sleep
 from random import randrange
-import os
 import random
-#import RPi.GPIO as GPIO
-#import Adafruit_DHT
+import RPi.GPIO as GPIO
+import Adafruit_DHT
 
-#DHT_SENSOR = Adafruit_DHT.DHT11
-#DHT_PIN = 4
+DHT_SENSOR = Adafruit_DHT.DHT11
+DHT_PIN = 4
 # GPIO.setmode(GPIO.BCM)            # choose BCM or BOARD
 # GPIO.setup(DHT_PIN, GPIO.IN)  # set a port/pin as an input
 # GPIO.setup(port_or_pin, GPIO.OUT) # set a port/pin as an output

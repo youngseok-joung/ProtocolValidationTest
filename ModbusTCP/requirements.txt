@@ -1,0 +1,5 @@
+pymodbus
+twisted
+threading
+RPi.GPIO
+Adafruit_DHT
